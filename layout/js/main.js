@@ -55,7 +55,7 @@ function getExchangeRate(){
         amount.value = "1";
         amountVal = 1;
     }
-    exchangeRateTxt.innerText = "Getting exchange rate...";
+    exchangeRateTxt.innerText = "Exchange rate...";
     let url = `https://v6.exchangerate-api.com/v6/be141c3213c645be5a2342ea/latest/${fromCurrency.value}`;
     // fetching api response and returning it with parsing into js obj and in another then method receiving that obj
     fetch(url).then(response => response.json()).then(result =>{
